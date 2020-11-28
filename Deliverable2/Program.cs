@@ -22,10 +22,10 @@ namespace Deliverable2
             }
 
             // error if user did not type heads or tails
-            //if (!headsOrTailsGuess.Equals("heads") && (!headsOrTailsGuess.Equals("tails"))){
-            //    Console.WriteLine("Error. Please Provide Correct Input.");
-            //    Environment.Exit(2);
-            //}
+            if (!headsOrTailsGuess.Equals("heads") && (!headsOrTailsGuess.Equals("tails"))){
+                Console.WriteLine("Error. Please Provide Correct Input.");
+                Environment.Exit(2);
+            }
 
             // Ask user for how many times coin will flip, recieve user input, parse string to int
             Console.Write("How many times shall we flip a coin? ");
